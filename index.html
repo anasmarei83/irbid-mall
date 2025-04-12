@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>فلاير أربد مول - عروض المواد الغذائية</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      direction: rtl;
+      background-color: #f5f5f5;
+    }
+
+    .flyer {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 20px auto;
+      background-color: #ffffff;
+      padding: 20mm;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* الترويسة مع صورة خلفية */
+    .header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-image: url('https://zworks.net/Decor/file/2016/12/6.jpg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      color: #fff;
+    }
+
+    .header img {
+      height: 90px;
+    }
+
+    .header-center {
+      text-align: center;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    .header-center img.logo {
+      height: 80px;
+      margin-bottom: 8px;
+    }
+
+    .header-center h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    /* شبكة المنتجات مع خلفية */
+    .products-grid {
+      background-image: url('https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=1000&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      position: relative;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.95);
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .product-card img {
+      width: 120px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .price-box {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #fff;
+      border: 1px solid #333;
+      border-radius: 4px;
+      padding: 3px 5px;
+      font-size: 12px;
+      font-weight: bold;
+      z-index: 1;
+    }
+
+    .product-name {
+      margin-top: 10px;
+         color: #000;
+      padding: 2px 3px;
+      font-size: 20x;
+ font-weight: bold;
+ color: #333;
+    }
+
+    .footer {
+      margin-top: 30px;
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid #ddd;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .footer span {
+      display: block;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="flyer">
+
+    <!-- ترويسة -->
+    <div class="header">
+      <img src="right-image.jpg" alt="صورة يمين">
+      <div class="header-center">
+        <img src="logo.png" alt="لوغو" class="logo">
+        <h1>عروض أربد مول</h1>
+      </div>
+      <img src="left-image.jpg" alt="صورة يسار">
+    </div>
+
+    <!-- شبكة عرض الأصناف -->
+    <div class="products-grid">
+      <!-- صنف 1 -->
+      <div class="product-card">
+        <div class="price-box">5 د.أ</div>
+<img alt="زيت" src="https://shop.alamer-market.com/storage/images/products/6291003303845.png?text=زيت"/>
+<div class="product-name">زيت دوار الشمس</div>
+</div>
+
+      <!-- صنف 2 -->
+      <div class="product-card">
+<div class="price-box">5 JD</div>
+<img alt="طحين" src="https://media.zid.store/e5778835-ecb6-4c78-af90-f0b1b47fc2d7/6e1789e4-8dfc-417a-8b7d-600e3a1abffb.jpeg?text=طحين"/>
+<div class="product-name">طحين فاخر</div>
+</div>
+      
+      <!-- صنف 3 -->
+      <div class="product-card">
+        <div class="price-box">5 JD</div>
+<img alt="موزريلا" src="https://moshtarecdn.click/images/originals/12-20-2022_0131pmbaf0e8bd75c3edb016d800113.jpg?text=موزريلا"/>
+<div class="product-name">جبنة موزريلا</div>
+</div>
+      
+      <!-- صنف 4 -->
+      <div class="product-card">
+        <div class="price-box">5 JD</div>
+<img alt="خيار" src="https://gardencells.com/files/original/products/101.jpg?text=خيار"/>
+<div class="product-name">خيار طازج</div>
+</div>
+           
+      <!-- صنف 5 -->
+      <div class="product-card">
+        <div class="price-box">5 JD</div>
+<img alt="بندورة" src="https://upload.wikimedia.org/wikipedia/commons/8/88/Bright_red_tomato_and_cross_section02.jpg?text=بندورة"/>
+<div class="product-name">بندورة طازجة</div>
+</div>
+      
+      <!-- صنف 6 -->
+      <div class="product-card">
+        <div class="price-box">5 JD</div>
+<img alt="جبنة مثلثات" src="https://albayanmarket.com/wp-content/uploads/2022/10/image-2023-03-30T133131.jpg?text=جبنة+مثلثات"/>
+<div class="product-name">جبنة مثلثات</div>
+</div>
+      
+      <!-- صنف 7 -->
+      <div class="product-card">
+        <div class="price-box">5 JD</div>
+<img alt="معكرونة" src="https://kitchen.sayidaty.net/uploads/node_gallery/1516799888_node_gallery.jpg?text=معكرونة"/>
+<div class="product-name">معكرونة</div>
+</div>
+      
+      <!-- صنف 8 -->
+      <div class="product-card">
+        <div class="price-box">5 JD</div>
+<img alt="دجاج" src="https://cdn.salla.sa/mnPyE/e2dd321b-e264-40b9-88f1-a0e59e310d50-1000x666.66666666667-6vAoudNEm0MGHtIIlpOr9wmBdCIgKu2hdB5v7Y8a.jpg?text=دجاج"/>
+<div class="product-name">دجاج طازج</div>
+</div>
+
+      
+      <!-- صنف 9 -->
+      <div class="product-card">
+        <div class="price-box">5 JD</div>
+<img alt="قهوة" src="https://static.sayidaty.net/2023-09/287079.jpeg?text=قهوة"/>
+<div class="product-name">قهوة</div>
+</div>
+
+      
+      <!-- صنف 10 -->
+      <div class="product-card">
+        <div class="price-box">5 JD</div>
+<img alt="لبنة" src="https://albayanmarket.com/wp-content/uploads/2022/10/%D9%84%D8%A8%D9%86%D8%A9-%D8%BA%D9%86%D9%85.jpg?text=لبنة"/>
+<div class="product-name">لبنة</div>
+</div>
+
+      
+      <!-- صنف 11 -->
+      <div class="product-card">
+        <div class="price-box">JD5 </div>
+        <img src="https://felesteen.news/thumb/w920/uploads/images/2023/07/pk1FH.jpg?text=بطيخ" alt="بطيخ">
+        <div class="product-name">بطيخ</div>
+      </div>
+
+ 
+ <!-- صنف 12 -->
+      <div class="product-card">
+        <div class="price-box">JD5 </div>
+        <img src="https://felesteen.news/thumb/w920/uploads/images/2023/07/pk1FH.jpg?text=بطيخ" alt="بطيخ">
+        <div class="product-name">بطيخ</div>
+      </div>
+
+<!-- صنف 13 -->
+      <div class="product-card">
+        <div class="price-box">JD5 </div>
+        <img src="https://felesteen.news/thumb/w920/uploads/images/2023/07/pk1FH.jpg?text=بطيخ" alt="بطيخ">
+        <div class="product-name">بطيخ</div>
+      </div>
+
+
+ <!-- صنف 14 -->
+      <div class="product-card">
+        <div class="price-box">JD5 </div>
+        <img src="https://felesteen.news/thumb/w920/uploads/images/2023/07/pk1FH.jpg?text=بطيخ" alt="بطيخ">
+        <div class="product-name">بطيخ</div>
+      </div>
+
+
+<!-- صنف 15 -->
+      <div class="product-card">
+        <div class="price-box">JD5 </div>
+        <img src="https://felesteen.news/thumb/w920/uploads/images/2023/07/pk1FH.jpg?text=بطيخ" alt="بطيخ">
+        <div class="product-name">بطيخ</div>
+      </div>
+
+
+<!-- صنف 16 -->
+      <div class="product-card">
+        <div class="price-box">JD5 </div>
+        <img src="https://felesteen.news/thumb/w920/uploads/images/2023/07/pk1FH.jpg?text=بطيخ" alt="بطيخ">
+        <div class="product-name">بطيخ</div>
+      </div>
+
+    
+<!-- صنف 17 -->
+      <div class="product-card">
+        <div class="price-box">JD5 </div>
+        <img src="https://felesteen.news/thumb/w920/uploads/images/2023/07/pk1FH.jpg?text=بطيخ" alt="بطيخ">
+        <div class="product-name">بطيخ</div>
+      </div>
+
+
+<!-- صنف 18 -->
+      <div class="product-card">
+        <div class="price-box">JD5 </div>
+        <img src="https://felesteen.news/thumb/w920/uploads/images/2023/07/pk1FH.jpg?text=بطيخ" alt="بطيخ">
+        <div class="product-name"> بطيخ</div>
+      </div>
+
+<!-- صنف 19 -->
+      <div class="product-card">
+        <div class="price-box">JD5 </div>
+        <img src="https://felesteen.news/thumb/w920/uploads/images/2023/07/pk1FH.jpg?text=بطيخ" alt="بطيخ">
+        <div class="product-name"> بطيخ</div>
+      </div>
+
+<!-- صنف 20 -->
+      <div class="product-card">
+        <div class="price-box">JD5 </div>
+        <img src="https://felesteen.news/thumb/w920/uploads/images/2023/07/pk1FH.jpg?text=بطيخ" alt="بطيخ">
+        <div class="product-name"> بطيخ</div>
+      </div>
+
+<!-- صنف 21 -->
+      <div class="product-card">
+        <div class="price-box">JD5 </div>
+        <img src="https://felesteen.news/thumb/w920/uploads/images/2023/07/pk1FH.jpg?text=بطيخ" alt="بطيخ">
+        <div class="product-name"> بطيخ</div>
+      </div>
+
+
+
+    </div>
+    
+    <!-- تذييل الفلاير -->
+    <div class="footer">
+      <span>رقم الهاتف: 0795638355</span>
+      <span>العنوان: اربد</span>
+    </div>
+    
+  </div>
+</body>
+</html>
+
+
+---
