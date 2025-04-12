@@ -1,0 +1,54 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f6fff4;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.left img {
+  height: 200px;
+}
+
+.center {
+  text-align: center;
+}
+
+.mall-logo {
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.mall-name {
+  font-size: 18px;
+  color: #2f2f2f;
+}
+
+.right {
+  text-align: right;
+}
+
+.right h1 {
+  font-size: 60px;
+  color: #74af2e;
+  margin: 0;
+}
+
+.sub {
+  font-size: 24px;
+  color: #74af2e;
+  margin: 5px 0;
+}
+
+.date {
+  font-size: 18px;
+  color: #7ea83d;
+}
